@@ -1,0 +1,59 @@
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 10:39 ?        00:00:01 /sbin/init
+root           2       1  0 10:39 ?        00:00:00 /init
+root           7       2  0 10:39 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          46       1  5 10:39 ?        00:00:25 /usr/lib/systemd/systemd-journald
+root          89       1  0 10:39 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+root         109       1  0 10:39 ?        00:00:00 snapfuse /var/lib/snapd/snaps/bare_5.snap /snap/bare/5 -o ro,nodev,allow_other,suid
+root         113       1  0 10:39 ?        00:00:00 snapfuse /var/lib/snapd/snaps/firefox_6782.snap /snap/firefox/6782 -o ro,nodev,allow_other,suid
+root         114       1  0 10:39 ?        00:00:00 snapfuse /var/lib/snapd/snaps/core22_2111.snap /snap/core22/2111 -o ro,nodev,allow_other,suid
+root         117       1  0 10:39 ?        00:00:00 snapfuse /var/lib/snapd/snaps/core22_2133.snap /snap/core22/2133 -o ro,nodev,allow_other,suid
+root         125       1  0 10:39 ?        00:00:00 snapfuse /var/lib/snapd/snaps/firefox_6836.snap /snap/firefox/6836 -o ro,nodev,allow_other,suid
+root         130       1  0 10:39 ?        00:00:00 snapfuse /var/lib/snapd/snaps/gnome-42-2204_202.snap /snap/gnome-42-2204/202 -o ro,nodev,allow_other,suid
+root         135       1  0 10:39 ?        00:00:00 snapfuse /var/lib/snapd/snaps/gnome-42-2204_226.snap /snap/gnome-42-2204/226 -o ro,nodev,allow_other,suid
+root         139       1  0 10:39 ?        00:00:00 snapfuse /var/lib/snapd/snaps/gtk-common-themes_1535.snap /snap/gtk-common-themes/1535 -o ro,nodev,allow_other,suid
+root         146       1  0 10:39 ?        00:00:02 snapfuse /var/lib/snapd/snaps/snapd_25202.snap /snap/snapd/25202 -o ro,nodev,allow_other,suid
+root         149       1  0 10:39 ?        00:00:00 snapfuse /var/lib/snapd/snaps/thunderbird_796.snap /snap/thunderbird/796 -o ro,nodev,allow_other,suid
+systemd+     176       1  0 10:39 ?        00:00:00 /usr/lib/systemd/systemd-oomd
+systemd+     188       1  0 10:39 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+systemd+     191       1  0 10:39 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+avahi        258       1  0 10:39 ?        00:00:00 avahi-daemon: running [mj-2.local]
+message+     259       1  0 10:39 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+gnome-r+     263       1  0 10:39 ?        00:00:00 /usr/libexec/gnome-remote-desktop-daemon --system
+polkitd      274       1  0 10:39 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug
+root         279       1  0 10:39 ?        00:00:00 /usr/libexec/power-profiles-daemon
+root         288       1  0 10:39 ?        00:00:00 /usr/lib/snapd/snapd
+root         293       1  0 10:39 ?        00:00:02 /usr/libexec/accounts-daemon
+root         294       1  0 10:39 ?        00:00:00 /usr/sbin/cron -f -P
+root         295       1  0 10:39 ?        00:00:00 /usr/libexec/switcheroo-control
+root         302       1  0 10:39 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root         308       1  0 10:39 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root         310       1  0 10:39 ?        00:00:00 /usr/libexec/wsl-pro-service -vv
+syslog       313       1  6 10:39 ?        00:00:30 /usr/sbin/rsyslogd -n -iNONE
+avahi        322     258  0 10:39 ?        00:00:00 avahi-daemon: chroot helper
+root         323       1  0 10:39 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root         325       1  0 10:39 ?        00:00:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+root         496       1  0 10:39 ?        00:00:00 /usr/sbin/cupsd -l
+root         499       1  0 10:39 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         515       1  0 10:39 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+root         518       1  0 10:39 ?        00:00:00 /usr/sbin/xrdp-sesman
+lp           524     496  0 10:39 ?        00:00:00 /usr/lib/cups/notifier/dbus dbus://
+kernoops     530       1  0 10:39 ?        00:00:00 /usr/sbin/kerneloops --test
+cups-br+     534       1  0 10:39 ?        00:00:00 /usr/sbin/cups-browsed
+kernoops     540       1  0 10:39 ?        00:00:00 /usr/sbin/kerneloops
+root         546       1  0 10:39 ?        00:00:00 /usr/sbin/gdm3
+xrdp         551       1  0 10:39 ?        00:00:00 /usr/sbin/xrdp
+root         626       2  0 10:39 ?        00:00:00 /init
+root         627     626  0 10:39 ?        00:00:00 /init
+yj951224     629     627  0 10:39 pts/0    00:00:00 -bash
+root         630       2  0 10:39 pts/1    00:00:00 /bin/login -f
+yj951224     754       1  0 10:39 ?        00:00:00 /usr/lib/systemd/systemd --user
+yj951224     755     754  0 10:39 ?        00:00:00 (sd-pam)
+yj951224     762     754  0 10:39 ?        00:00:00 /usr/bin/pipewire
+yj951224     763     754  0 10:39 ?        00:00:00 /usr/bin/pipewire -c filter-chain.conf
+yj951224     764     754  0 10:39 ?        00:00:00 /usr/bin/wireplumber
+yj951224     765     754  0 10:39 ?        00:00:00 /usr/bin/pipewire-pulse
+yj951224     766     630  0 10:39 pts/1    00:00:00 -bash
+yj951224     773     754  0 10:39 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+rtkit        784       1  0 10:39 ?        00:00:00 /usr/libexec/rtkit-daemon
+yj951224    1005     629  0 10:46 pts/0    00:00:00 ps -ef
