@@ -1,6 +1,6 @@
 pwd = $(shell pwd)
 cc = gcc
-ln = ln -s
+ln = ln -sf
 
 obj = $(pwd)/obj
 src = $(pwd)/src
@@ -24,21 +24,18 @@ opsobj := $(subst $(obj)/myapp.o,,$(opsobj))
 
 all: $(myapp)
 
-
-
-
-
 $(obj)/%.o: $(src)/%.c | $(obj)
 	$(cc) -c $< -o $@ $(inclu)
+	
 
 $(libmyops).so.1.0: $(opsobj) | $(lib)
-	$(cc) $(option) $(opsobj) -o $(libmyops).so.1.0
+	$(cc) $(option) $^ -o $@
 
 $(libmyops).so.1:
-	$(ln) -sf $(libmyops).so.1.0 $@
+	$(ln) $(libmyops).so.1.0 $@
 
 $(libmyops).so:
-	$(ln) -sf $(libmyops).so.1 $@
+	$(ln) $(libmyops).so.1 $@
 
 $(myapp): $(src)/$(myapp).c $(libmyops).so.1.0 $(libmyops).so.1 $(libmyops).so  | $(bin)
 	$(cc) $(src)/$(myapp).c $(inclu) -L$(lib) $(libopt) -o $(bin)/$(myapp)

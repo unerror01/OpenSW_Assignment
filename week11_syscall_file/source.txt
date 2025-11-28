@@ -1,0 +1,4 @@
+this is copy and paste test
+i am source.txt
+nice to meet you
+have a good day!
